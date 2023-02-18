@@ -1,0 +1,1 @@
+spring.sleuth.otel.exporter.otlp.endpoint = http://otel-collector:4317
