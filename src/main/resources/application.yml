@@ -1,1 +1,25 @@
-spring.sleuth.otel.exporter.otlp.endpoint = http://otel-collector:4317
+spring:
+  application:
+    name: tracer-service
+  sleuth:
+    otel:
+      config:
+        trace-id-ratio-based: 1.0
+      exporter:
+        otlp:
+          endpoint: http://localhost:4317
+  kafka:
+    bootstrap-servers: localhost:29092
+    consumer:
+      group-id: tracer
+
+springdoc:
+  swagger-ui:
+    displayRequestDuration: true
+    disable-swagger-default-url: true
+    csrf:
+      enabled: true
+    operationsSorter: method #For sorting endpoints by http methods
+    tagsSorter: alpha #For sorting tags alphabetically
+  api-docs:
+    path: /api
