@@ -42,7 +42,7 @@ dependencies {
 	implementation 'io.opentelemetry:opentelemetry-exporter-otlp-trace'
 	implementation 'io.grpc:grpc-okhttp:1.50.0'
 
-	implementation 'org.springdoc:springdoc-openapi-ui:1.6.14'
+	implementation 'org.springdoc:springdoc-openapi-ui:1.6.15'
 
 	implementation 'org.springframework.kafka:spring-kafka'
 }
